@@ -2,20 +2,17 @@
 
 // Use a for loop to print numbers from 1 to 10
   
-
-
-
-
+for (let i = 1; i <= 10; i++) {
+    console.log(i);
+  }
 
 /****************** Exercise 2 ********************/
 
 // Create a for loop that logs the numbers 4 to 156 to the console.
 
-
-
-
-
-
+for (let i = 4; i <= 156; i++) {
+    console.log(i);
+  }
 
 
 /****************** Exercise 3 ********************/
@@ -23,20 +20,19 @@
 // Given the following array, log the sentence, "I really like the color: [COLOR]" for each of the items.
 const favoriteColors = ["red", "blue", "purple", "yellow"];
 
-
-
-
-
-
-
-
+for (let i = 0; i < favoriteColors.length; i++) {
+    console.log(`I really like the color: ${favoriteColors[i]}`);
+  }
 
 /****************** Exercise 4 ********************/
 
 // Use a for loop to calculate the sum of even numbers from 2 to 20
 
-
-
+let sum = 0;
+for (let i = 2; i <= 20; i += 2) {
+  sum += i;
+}
+console.log(`The sum of even numbers from 2 to 20 is ${sum}`);
 
 
 
@@ -47,14 +43,10 @@ const inputString = "hello";
 let reversedString = "";
 // Output should be "olleh"
 
-
-
-
-
-
-
-
-
+for (let i = inputString.length - 1; i >= 0; i--) {
+    reversedString += inputString[i];
+  }
+  console.log(`Reversed string is: ${reversedString}`);
 
 
 /****************** Exercise 6 ********************/
@@ -67,9 +59,10 @@ let factorial = 1;
 
 // Calculate the factorial of a number using a for loop
 
-
-
-
+for (let i = 1; i <= num; i++) {
+    factorial *= i;
+  }
+  console.log(`The factorial of ${num} is ${factorial}`);
 
 
 
@@ -91,3 +84,7 @@ console.log(`Number of Years: ${years}`);
 
 // Calculate the interest on an investment using a for loop
 
+for (let i = 1; i <= years; i++) {
+    amount *= (1 + annualInterestRate);
+  }
+  console.log(`Amount after ${years} years: $${amount.toFixed(2)}`);
